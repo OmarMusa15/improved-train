@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fbf8f2">
+    <meta name="description" content="Omar Musayev's student portfolio: technology, AI, projects, and interests.">
+    <title>Omar Musayev — personal portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="wordmark" href="#home" data-page="home" aria-label="Omar Musayev, home">
+          <span class="wordmark-mark">✳</span>
+          <span>your<span class="wordmark-light">space</span></span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a class="nav-link is-active" href="#home" data-page="home" aria-current="page"><span>01</span> Home</a>
+          <a class="nav-link" href="#about" data-page="about"><span>02</span> About</a>
+          <a class="nav-link" href="#projects" data-page="projects"><span>03</span> Projects</a>
+          <a class="nav-link" href="#contact" data-page="contact"><span>04</span> Contacts</a>
+        </nav>
+
+        <a class="availability" href="#contact" data-page="contact">
+          <span class="availability-dot"></span>
+          <span>Let’s connect</span>
+          <span class="availability-arrow" aria-hidden="true">↗</span>
+        </a>
+      </header>
+
+      <main id="main-content">
+        <section class="page page-home is-visible" id="home" aria-labelledby="home-title">
+          <div class="home-copy">
+            <p class="eyebrow"><span class="eyebrow-line"></span> A LITTLE INTRODUCTION</p>
+            <h1 id="home-title">Hello, I’m<br><span class="name-highlight">Omar Musayev</span><span class="hello-sparkle" aria-hidden="true">✳</span></h1>
+            <p class="home-description">I’m a motivated and curious student in Information Technology who enjoys learning new things, exploring technology, and challenging myself. <span class="home-intro-secondary">I’m particularly interested in artificial intelligence and its potential to make people’s lives easier.</span> <span class="home-intro-extra">In the future, I hope to become an AI specialist and use my knowledge to contribute to the development of my country.</span></p>
+            <div class="home-actions">
+              <a class="button button-dark" href="#about" data-page="about">Get to know me <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="#projects" data-page="projects">Explore my work <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="home-note"><span aria-hidden="true">☀</span> Making room for good ideas.</div>
+          </div>
+
+          <div class="portrait-stage">
+            <div class="portrait-orbit orbit-one"></div>
+            <div class="portrait-orbit orbit-two"></div>
+            <div class="portrait-card">
+              <label class="portrait-upload" for="photo-upload" tabindex="0" role="button" aria-label="Upload your profile photo">
+                <img id="profile-photo" alt="Your uploaded profile portrait" hidden>
+                <span class="upload-placeholder" id="upload-placeholder">
+                  <span class="upload-icon" aria-hidden="true">＋</span>
+                  <span class="upload-title">Your photo goes here</span>
+                  <span class="upload-hint">Tap to choose an image</span>
+                </span>
+                <span class="photo-edit-hint">Change photo <span aria-hidden="true">↗</span></span>
+              </label>
+              <input id="photo-upload" class="visually-hidden" type="file" accept="image/*" aria-label="Choose a profile photo">
+              <span class="visually-hidden" id="photo-status" aria-live="polite"></span>
+              <div class="portrait-caption">
+                <span class="caption-star" aria-hidden="true">✳</span>
+                <span>the person behind the ideas</span>
+              </div>
+            </div>
+            <div class="floating-note note-top"><span aria-hidden="true">👋</span> Nice to meet you!</div>
+            <div class="floating-note note-bottom"><span aria-hidden="true">📍</span> Kalbajar roots · Baku home</div>
+            <span class="floating-doodle doodle-one" aria-hidden="true">✦</span>
+            <span class="floating-doodle doodle-two" aria-hidden="true">✳</span>
+          </div>
+
+          <div class="page-index"><span>01</span><i></i> 04</div>
+        </section>
+
+        <section class="page page-about" id="about" aria-labelledby="about-title" hidden>
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow"><span class="eyebrow-line"></span> A FEW THINGS ABOUT ME</p>
+              <h2 id="about-title">Curious by nature,<br><span class="serif-accent">growing by choice.</span></h2>
+            </div>
+            <div class="about-progress">
+              <div class="progress-copy"><span>Curiosity quest</span><strong id="about-progress-label" aria-live="polite">0 / 5 badges</strong></div>
+              <div class="progress-track" role="progressbar" aria-label="About page badges collected" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0"><span class="progress-fill" id="about-progress-fill"></span></div>
+              <span class="progress-star" aria-hidden="true">✦</span>
+            </div>
+          </div>
+          <div class="about-layout">
+            <div class="about-stories">
+              <button class="story-card story-featured" type="button" data-story="who" aria-pressed="false">
+                <span class="story-icon" aria-hidden="true">🌱</span>
+                <span class="story-content"><span class="story-title">Who am I?</span><span class="story-answer">Omar Musayev · Information Technology student · aspiring AI specialist.</span></span>
+                <span class="story-check" aria-hidden="true">✓</span>
+              </button>
+              <button class="story-card" type="button" data-story="background" aria-pressed="false">
+                <span class="story-icon" aria-hidden="true">🧭</span>
+                <span class="story-content"><span class="story-title">My background</span><span class="story-answer">From Kalbajar, Karabakh; now living in Baku.</span></span>
+                <span class="story-check" aria-hidden="true">✓</span>
+              </button>
+              <button class="story-card" type="button" data-story="qualifications" aria-pressed="false">
+                <span class="story-icon" aria-hidden="true">🎓</span>
+                <span class="story-content"><span class="story-title">Qualifications</span><span class="story-answer">Ganja School No. 12 · IELTS 7 · SAT 1500 · Olympiad awards.</span></span>
+                <span class="story-check" aria-hidden="true">✓</span>
+              </button>
+              <button class="story-card" type="button" data-story="activities" aria-pressed="false">
+                <span class="story-icon" aria-hidden="true">✨</span>
+                <span class="story-content"><span class="story-title">Activities & experience</span><span class="story-answer">EmpowHERment Club · ASAN Xidmət & Ganja American Center volunteer.</span></span>
+                <span class="story-check" aria-hidden="true">✓</span>
+              </button>
+              <button class="story-card" type="button" data-story="interests" aria-pressed="false">
+                <span class="story-icon" aria-hidden="true">🎨</span>
+                <span class="story-content"><span class="story-title">Interests</span><span class="story-answer">Volleyball, video games, friends, and chess.</span></span>
+                <span class="story-check" aria-hidden="true">✓</span>
+              </button>
+            </div>
+
+            <aside class="skills-card" aria-labelledby="skills-title">
+              <div class="skills-heading"><span class="skills-emoji" aria-hidden="true">🌍</span><div><p class="eyebrow">MY LANGUAGE PASSPORT</p><h3 id="skills-title">Languages I speak</h3></div></div>
+              <table class="skills-table">
+                <thead><tr><th scope="col">Language</th><th scope="col">Level</th></tr></thead>
+                <tbody>
+                  <tr><td><span class="language-flag" aria-hidden="true">🇦🇿</span> Aze</td><td><span class="level-pill level-native">Native</span></td></tr>
+                  <tr><td><span class="language-flag" aria-hidden="true">🇬🇧</span> English</td><td><span class="level-pill level-fluent">Fluent</span></td></tr>
+                  <tr><td><span class="language-flag" aria-hidden="true">🇹🇷</span> Turkish</td><td><span class="level-pill level-fluent">Fluent</span></td></tr>
+                  <tr><td><span class="language-flag" aria-hidden="true">🇩🇪</span> German</td><td><span class="level-pill level-beginner">Beginner</span></td></tr>
+                </tbody>
+              </table>
+              <p class="skills-footnote"><span aria-hidden="true">💬</span> Every new word opens a new door.</p>
+              <a class="skills-link" href="#contact" data-page="contact">Say salam <span aria-hidden="true">↗</span></a>
+            </aside>
+          </div>
+          <div class="page-index"><span>02</span><i></i> 04</div>
+        </section>
+
+        <dialog class="story-dialog" id="story-dialog" aria-labelledby="story-dialog-title">
+          <form method="dialog"><button class="dialog-close" aria-label="Close story prompt">×</button></form>
+          <p class="eyebrow"><span class="eyebrow-line"></span> YOUR STORY, YOUR WORDS</p>
+          <h2 id="story-dialog-title"></h2>
+          <p id="story-dialog-copy"></p>
+          <p class="dialog-reminder">This is Omar’s story. The cards open more details, and the badges mark the sections you’ve explored.</p>
+          <button class="button button-dark dialog-done" id="story-dialog-done" type="button">Got it <span aria-hidden="true">✓</span></button>
+        </dialog>
+
+        <section class="page page-projects" id="projects" aria-labelledby="projects-title" hidden>
+          <div class="projects-heading">
+            <div>
+              <p class="eyebrow"><span class="eyebrow-line"></span> MY FEATURED PROJECT</p>
+              <h2 id="projects-title">Small gates,<br><span class="serif-accent">big ideas.</span></h2>
+            </div>
+            <p class="projects-intro">My teammates and I built NOT, AND, and OR logic gates and explored how simple binary rules power the technology around us.</p>
+          </div>
+          <div class="logic-project-layout">
+            <article class="logic-project-card">
+              <div class="logic-project-art">
+                <span class="logic-art-orbit" aria-hidden="true"></span>
+                <span class="logic-art-glyph" aria-hidden="true">∧</span>
+                <span class="logic-art-caption">BINARY IN · IDEAS OUT</span>
+                <img class="project-preview" id="project-preview-1" alt="Photo of Omar's Logic Gates project" hidden>
+                <input class="project-photo-input visually-hidden" id="project-photo-1" data-preview="project-preview-1" data-status="project-photo-status-1" type="file" accept="image/*">
+                <label class="project-photo-button" for="project-photo-1">📷 Add project photo</label>
+                <span class="visually-hidden" id="project-photo-status-1" aria-live="polite"></span>
+              </div>
+              <div class="logic-project-copy">
+                <div class="project-meta"><span>TEAM PROJECT · DIGITAL ELECTRONICS</span><span class="project-arrow" aria-hidden="true">✳</span></div>
+                <h3>Logic Gates</h3>
+                <p><span class="project-description-full">My teammates and I constructed three logic gates: NOT, AND, and OR. Logic gates process binary inputs (0 and 1) and produce outputs based on logical rules. They are essential building blocks of computers, processors, and other digital devices.</span><span class="project-description-compact">We built NOT, AND, and OR gates to see how binary inputs shape digital devices.</span></p>
+                <p class="project-reflection"><span aria-hidden="true">💡</span> This project helped me understand how the tiny building blocks inside digital devices turn simple inputs into useful decisions.</p>
+                <button class="project-video-button" id="open-project-video" type="button" aria-haspopup="dialog">
+                  <span class="video-play-icon" aria-hidden="true">▶</span>
+                  <span><strong>Watch the project presentation</strong><small>See the Logic Gates project in action</small></span>
+                  <span class="video-open-icon" aria-hidden="true">↗</span>
+                </button>
+                <a href="#contact" data-page="contact" class="project-link">Ask me about the project <span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+
+            <section class="logic-lab" aria-labelledby="logic-lab-title">
+              <div class="logic-lab-heading">
+                <div><p class="eyebrow">YOUR TURN · LOGIC LAB</p><h3 id="logic-lab-title">Tap a gate. Toggle A or B.</h3></div>
+                <span class="lab-sparkle" aria-hidden="true">✳</span>
+              </div>
+              <div class="gate-tabs" role="group" aria-label="Choose a logic gate">
+                <button class="gate-tab is-selected" type="button" data-gate="AND" aria-pressed="true">AND <span>∧</span></button>
+                <button class="gate-tab" type="button" data-gate="OR" aria-pressed="false">OR <span>∨</span></button>
+                <button class="gate-tab" type="button" data-gate="NOT" aria-pressed="false">NOT <span>¬</span></button>
+              </div>
+              <div class="logic-lab-content">
+                <div class="gate-console">
+                  <div class="gate-inputs">
+                    <button class="input-switch" type="button" data-input="A" aria-pressed="false" aria-label="Input A is 0, toggle to 1"><span class="input-name">A</span><span class="input-value">0</span><span class="switch-track"><span></span></span></button>
+                    <button class="input-switch" type="button" data-input="B" aria-pressed="false" aria-label="Input B is 0, toggle to 1"><span class="input-name">B</span><span class="input-value">0</span><span class="switch-track"><span></span></span></button>
+                  </div>
+                  <div class="gate-diagram" aria-hidden="true"><span class="diagram-wire wire-a"></span><span class="diagram-wire wire-b"></span><span class="gate-glyph" id="gate-glyph">∧</span><span class="diagram-wire wire-out"></span></div>
+                  <div class="gate-output" id="gate-output" data-output="0" aria-live="polite"><span>OUTPUT</span><strong id="output-value">0</strong><span id="output-word">LOW</span></div>
+                </div>
+                <div class="truth-table-wrap">
+                  <div class="truth-table-heading"><span>TRUTH TABLE</span><span id="table-gate-label">AND gate</span></div>
+                  <table class="truth-table">
+                    <thead><tr><th scope="col">A</th><th class="input-b-heading" scope="col">B</th><th scope="col">OUT</th></tr></thead>
+                    <tbody id="truth-table-body"></tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="logic-challenge">
+                <span class="challenge-icon" aria-hidden="true">🎯</span>
+                <p id="challenge-message" aria-live="polite">Challenge: make the output HIGH.</p>
+                <button class="challenge-button" id="new-challenge" type="button">New challenge <span aria-hidden="true">↻</span></button>
+              </div>
+              <p class="logic-explanation" id="gate-explanation">An AND gate outputs 1 only when both inputs are 1.</p>
+            </section>
+          </div>
+          <div class="page-index"><span>03</span><i></i> 04</div>
+        </section>
+
+        <dialog class="video-dialog" id="project-video-dialog" aria-labelledby="project-video-title">
+          <div class="video-dialog-heading">
+            <div><p class="eyebrow"><span class="eyebrow-line"></span> PROJECT SHOWCASE</p><h2 id="project-video-title">Logic Gates <span class="serif-accent">in action.</span></h2></div>
+            <button class="dialog-close" id="close-project-video" type="button" aria-label="Close project video">×</button>
+          </div>
+          <div class="video-frame">
+            <iframe id="project-video-frame" title="Omar Musayev's Logic Gates project presentation" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="video-dialog-footer">
+            <p>A closer look at our team’s NOT, AND, and OR logic gates.</p>
+            <a href="https://youtu.be/TnAJ2LDV6SE?feature=shared" target="_blank" rel="noopener noreferrer">Open on YouTube <span aria-hidden="true">↗</span></a>
+          </div>
+        </dialog>
+
+        <section class="page page-contact" id="contact" aria-labelledby="contact-title" hidden>
+          <div class="contact-copy">
+            <p class="eyebrow"><span class="eyebrow-line"></span> YOUR NEXT HELLO STARTS HERE</p>
+            <h2 id="contact-title">Got a good<br><span class="serif-accent">feeling?</span></h2>
+            <p class="contact-description">Have a question, an idea, or just want to say hi? I’d love to hear from you. Leave a note and let’s start a conversation.</p>
+            <div class="contact-sticker" aria-hidden="true"><span>GOOD<br>THINGS<br>HAPPEN</span><span class="sticker-star">✳</span></div>
+          </div>
+          <div class="contact-panel">
+            <div class="contact-panel-heading"><span class="contact-bubble" aria-hidden="true">💌</span><div><p class="eyebrow">A NOTE IN MY INBOX</p><h3>Send me a little hello</h3></div></div>
+            <form id="contact-form">
+              <label for="sender-name">Your name</label>
+              <input id="sender-name" name="name" type="text" placeholder="What should I call you?" required>
+              <label for="sender-message">Your message</label>
+              <textarea id="sender-message" name="message" rows="3" placeholder="Tell me what’s on your mind…" required></textarea>
+              <button class="button button-dark contact-submit" type="submit">Make it a real email <span aria-hidden="true">↗</span></button>
+              <p class="form-hint" id="form-hint" aria-live="polite">This opens your email app so you can send it.</p>
+            </form>
+            <div class="contact-divider"><span>OR FIND ME HERE</span></div>
+            <a class="email-link" href="mailto:omarmusayev153@gmail.com" data-email="omarmusayev153@gmail.com"><span class="email-icon" aria-hidden="true">✉</span> omarmusayev153@gmail.com <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="page-index"><span>04</span><i></i> 04</div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <span><span class="footer-credit">© <span id="current-year"></span> Omar Musayev</span><span class="footer-sunshine"> · made with a little sunshine <span aria-hidden="true">☀</span></span></span>
+        <span class="footer-hint">A small corner of the internet, just for me.</span>
+        <a class="footer-github-link" href="https://github.com/OmarMusa15/redesigned-rotary-phone" target="_blank" rel="noopener noreferrer" aria-label="Open Omar's Project 4 repository on GitHub" title="Project 4 on GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.1c-3.2.7-3.88-1.36-3.88-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.71 1.25 3.37.95.1-.75.4-1.25.73-1.54-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.07 11.07 0 0 1 5.79 0c2.21-1.5 3.18-1.18 3.18-1.18.63 1.59.23 2.77.11 3.06.74.81 1.19 1.84 1.19 3.1 0 4.43-2.71 5.41-5.29 5.69.42.36.79 1.06.79 2.14v3.18c0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+        </a>
+      </footer>
+    </div>
+    <div class="page-announcement visually-hidden" id="page-announcement" aria-live="polite" aria-atomic="true"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
